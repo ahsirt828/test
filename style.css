@@ -1,0 +1,243 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+	background: rgba(27,27,27,0.7);
+}
+
+.navbar-default {
+	background-color: transparent;
+	color: #87CEFA;
+}
+
+.navbar-default.change-color {
+  background-color: blue;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(221,221,221,1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(221,221,221,1);
+  box-shadow: 0px 0px 4px 0px rgba(221,221,221,1);
+}
+
+.navbar-default .navbar-brand{
+	color: black;
+	font-style: oblique;
+	font-family: serif, "Lucida Console";
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+	color: black;
+	background-color: #87CEFA;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: maroon;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: transparent;
+	background: #87CEFA;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: white;
+	background-color: #87CEFA;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+	color: rgba(0,0,0,0);
+}
+.dropdown {
+	background-color: transparent;
+}
+
+.dropdown-toggle {
+	background-color: rgba(0,0,0,0);
+	color: transparent;
+}
+
+.dropdown-menu {
+	background-color: rgba(0,0,0,0);
+}
+
+.slides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.slides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.slides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.slides img {
+  background-repeat: no-repeat;
+  display: block;
+  height: 450px;
+  width: 100%;
+  border: 0;
+  }
+
+.columnsContainer, footer, header { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn, footer, header {  border: 1px solid  #ccc; padding: 1.25em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.inline-items {
+  margin-top: 0;
+}
+
+.inline-items li {
+  margin-left: 0;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inline-items li:first-child {
+  margin-left: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.inline-items li:last-child {
+  padding-right: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 19.5em; }
+
+.rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+}  
+
+.contactUs-wrapper {
+
+	background-color: #00FFFF;
+	margin-top: 15px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+}
+
+.contactUs {
+
+	background-color: #00FFFF;
+	margin-top: 15px;
+	max-width: 1100px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contactUs div input {
+
+	max-width: 250px;
+	height: 30px;
+}
+
+.contactUs div input {
+
+	width: 360px;
+	height: 56px;
+	display: block;
+	margin:20px;
+	text-align: left;
+}
+
+.div h1 {
+
+	font-size: 45px;
+	font-family: "century gothic";
+	text-align: center;
+	color:white;
+	margin-top: 10px;
+
+}
+
+.div div{
+
+	width: 2px;
+	background-color: #00FFFF;
+	height: 170px;
+	margin:auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.div input[type=submit] {
+
+	height: 52px;
+	width: 250px;
+	text-align: center;
+	border:3px solid lightblue;
+	box-shadow: 0 0 1px grey;
+	font-family: "century gothic";
+	font-size: 24px;
+	color:#2c2c2c;
+	margin:auto;
+
+}
+
+.btn-default {
+
+	background-color: lightblue;
+	box-shadow: grey;
+	border:3px solid black;
+}
+
+footer {
+
+	height: 100px;
+	text-align: center;
+	background-color: grey;
+	color: grey;
+}
+
+footer img {
+
+	margin:10px;
+	margin-top: 50px;
+	transform: 0.4s;
+}
+
+footer img:hover {
+
+	transform: scale(1.2);
+	transition: transform 0.4s;
+}
