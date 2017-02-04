@@ -102,19 +102,112 @@
   border: 0;
   }
 
-.contactUs-wrapper {
 
-	background-color: #20B2AA;
-	margin-top: 15px;
-	padding-top: 30px;
-	padding-bottom: 20px;
+
+/*-- TOP DESTINATIONS --*/
+
+.color {
+
+	background-color: #008080;
+	height: 15px;
+	width: auto; 
+}
+
+.destinations {
+
+	max-width:1200px;
+	margin:0 auto;
+	height: auto;
+	padding-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.destinations span {
+
+	padding-left: 20px;
+}
+
+.destinations div h1 {
+
+	font-size: 45px;
+	font-family: serif, "century gothic";
+	max-width: 600px;
+	margin-top: 30px;
+}
+
+.destinations-pictures {
+	
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 130px auto ;
+	margin-bottom: 40px;
+	margin-top: 40px;
 
 }
 
+.destinations-pictures div {
+	
+	margin-bottom: 40px;
+	position: relative;
+
+}
+
+.image-description {
+	
+	text-align: center;
+	font-family: "cooper";
+	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.4s;
+
+}
+
+.image-description span {
+	
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 13px;
+	text-shadow: 0 0 5px black;
+
+}
+
+
+.image-wrap:hover .image-description {
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s;
+    cursor: pointer;
+
+}
+
+.destinations-pictures div img {
+
+	border-radius: 15px;
+
+}
+
+/*-- CONTACT US --*/
 .contactUs {
 
 	background-color: #20B2AA;
-	margin-top: 15px;
+	margin-top: 20px;
 	max-width: 1100px;
 	margin:auto;
 	display: flex;
@@ -190,5 +283,5 @@ footer h2 {
 }
 
 footer img {
-	margin-top: 20px;
+	margin-top: 10px;
 }
