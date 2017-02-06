@@ -29,7 +29,7 @@ $(function() {
     speed: 500
   });
 });
-
+ //SCROLL
 jQuery(document).ready(function($) {
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop(),
